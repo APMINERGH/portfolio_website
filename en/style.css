@@ -14,6 +14,7 @@
   --hover: #505050;
   --active: #303030;
 }
+
 /* Body/Eye/ScrollBar/Cursor Settings--------------------------------------------*/
 body {
   background-color: var(--major);
@@ -99,6 +100,7 @@ html::-webkit-scrollbar-thumb:hover {
   height: 50px;
   opacity: .5;
 }
+
 /* Header/Progress Bar/Top Buttons Settings----------------------------------*/
 header {
   width: 100%;
@@ -184,6 +186,7 @@ header {
 #en-btn:active {
   background-color: var(--active);
 }
+
 /* Container of Site's Sections----------------------------------------------*/
 #tiles-container {
   width: 100%;
@@ -191,6 +194,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 /* RGB CMYK Solar System Section---------------------------------------------*/
 #tile1 {
   width: 100%;
@@ -401,6 +405,7 @@ header {
     transform: scale(1.1);
   }
 }
+
 /* About Section-------------------------------------------------------------*/
 #tile2 {
   margin-top: 10px;
@@ -578,6 +583,7 @@ header {
 .cards5:active {
   transform: translateY(-8px);
 }
+
 /* Projects Section----------------------------------------------------------*/
 #tile3 {
   width: 100%;
@@ -660,6 +666,7 @@ header {
 #portfolio-source-code-btn:active {
   background-color: var(--active);
 }
+
 /* Contact Section-----------------------------------------------------------*/
 #contact-tile {
   margin-top: 50px;
@@ -737,6 +744,7 @@ header {
   width: 50px;
   height: 50px;
 }
+
 /* Floating Go to top and Contact button-------------------------------------*/
 #top-btn {
   z-index: 2;
@@ -779,6 +787,7 @@ header {
   transition: 0s;
   background-color: var(--active);
 }
+
 /* Settings for Smaller screens----------------------------------------------*/
 @media only screen and (max-width: 750px) {
   .cursor, .cursor2, .cursorinnerhover {

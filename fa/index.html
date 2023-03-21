@@ -8,6 +8,8 @@
   <link rel="icon" href="/images/FeelsRainMan.svg">
   <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Body, custome Cursor & Cursor following Eye -->
 <body>
   <div id="move-area">
     <div class="eyesContainer">
@@ -18,6 +20,8 @@
   </div>
   <div class="cursor"></div>
   <div class="cursor2"></div>
+
+  <!-- Header content -->
   <header>    
     <div class="progress-bar" id="progressBar">
       <div class="progress-container"></div>
@@ -32,6 +36,8 @@
       <svg width="30" height="30" viewBox="0 0 26 26" fill="none"><g clip-path="url(#clip0_52_11)"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3902 2.47054C13.1273 4.86763 11.4857 9.04122 12.5768 13.1134C13.6679 17.1855 17.1764 19.9791 21.2007 20.4236C20.1891 21.1668 19.0216 21.7392 17.7315 22.0849C12.28 23.5457 6.70193 20.4052 5.27252 15.0705C3.8431 9.73588 7.10362 4.22714 12.5551 2.76642C13.8453 2.42072 15.1425 2.33273 16.3902 2.47054Z" fill="black"/></g><defs><clipPath id="clip0_52_11"><rect width="20" height="20" fill="white" transform="translate(0.752441 5.92892) rotate(-15)"/></clipPath></defs></svg>
     </button></a>
   </div>
+
+  <!-- Sections container & Tile 1 -->
   <section id="tile-container">
     <div id="tile1">
       <div class="planets-container">
@@ -65,6 +71,8 @@
         </div>                           
       </div>
     </div>
+
+    <!-- Tile 2 -->
     <div id="tile2">
       <div id="info">
         <div id="about-me">
@@ -142,33 +150,34 @@
         </div>
       </div>
     </div>
+
+    <!-- Tile3 *Projects tile* -->
     <div id="tile3">
       <div id="projects-tile">
         <h2>پروژه ها</h2>
-          <button type="button" class="collapsible">1402/1/30 | گلخانه هوشمند</button>
-          <div class="content-box">
-            <div class="content">
-              <p>این سایت اولین قدم جدی من در زمینه طراحی وب بود, یه سایت رزومه برای نمایش فعالیت هام. برای افزایش سرعت سورس کد سایت فشرده شده, اگه سورس کد اصلی با توضیحات رو میخوای روی دکمه زیر کلیک کن</p>
-            </div>
-          </div>
+
           <button type="button" class="collapsible">1402/1/10 | فروشگاه لبنیات</button>
           <div class="content-box">
             <div class="content">
-              <p>این سایت اولین قدم جدی من در زمینه طراحی وب بود, یه سایت رزومه برای نمایش فعالیت هام. برای افزایش سرعت سورس کد سایت فشرده شده, اگه سورس کد اصلی با توضیحات رو میخوای روی دکمه زیر کلیک کن</p>
+              <p>توضیحات</p>
             </div>
           </div>
+
           <button type="button" class="collapsible"> سایت رزومه | 1401/12/21</button>
           <div class="content-box">
             <div class="content">
               <p>این سایت اولین قدم جدی من در زمینه طراحی وب بود, یه سایت رزومه برای نمایش فعالیت هام. برای افزایش سرعت سورس کد سایت فشرده شده, اگه سورس کد اصلی با توضیحات رو میخوای روی دکمه زیر کلیک کن</p>
-              <a href="#portfolio-source-code" target="_blank"><button id="portfolio-source-code-btn">سورس کد با توضیحات</button></a>
+              <a href="https://github.com/APMINERGH/portfolio_website" target="_blank"><button id="portfolio-source-code-btn">سورس کد با توضیحات</button></a>
             </div>
           </div>
+
       </div>
     </div>
+
+    <!-- Contact Tile -->
     <div id="contact-tile">
       <h2>تماس با من</h2>
-      <form id="contact-form" action="https://getform.io/f/ae328422-f25b-4f09-8c08-cbd65ed6673e" method="POST">
+      <form id="contact-form" >
         <input type="text" name="name" placeholder="نام *" required oninvalid="this.setCustomValidity('وارد کردن نام الزامی است')" oninput="setCustomValidity('')">
         <input type="email" name="email" placeholder="ایمیل *" required oninvalid="this.setCustomValidity('وارد کردن ایمیل الزامی است')" oninput="setCustomValidity('')">
         <input type="text" name="subject" placeholder="موضوع">
@@ -182,9 +191,13 @@
         <a href="#later"></a>   
       </div>
     </div>
+
+    <!-- Floating Buttons -->
     <a><button id="top-btn" onclick="scrollToTop()" title="Go to top"><svg width="25" height="15" viewBox="0 0 25 15" fill="none"><path d="M2.23958 14.7396L0 12.5L12.5 0L25 12.4479L22.7604 14.6875L12.5 4.42708L2.23958 14.7396Z" fill="var(--minor)"/></svg></button></a>
     <a href="#contact-tile"><button id="mail-btn" title="Contact Me"><svg width="40" height="25" viewBox="0 0 40 28"><path d="M33.576 28H6.42444C2.88178 28 0 25.3094 0 22.0018V5.99819C0 2.69099 2.88222 0 6.42444 0H33.576C37.1182 0 40 2.69099 40 5.99819V22.0018C40 25.3094 37.1182 28 33.576 28ZM6.42444 1.75402C3.91778 1.75402 1.87867 3.65784 1.87867 5.99819V22.0018C1.87867 24.3422 3.91778 26.2464 6.42444 26.2464H33.576C36.0827 26.2464 38.1218 24.3422 38.1218 22.0018V5.99819C38.1218 3.65784 36.0827 1.75402 33.576 1.75402H6.42444Z" fill="var(--minor)"/><path d="M4.90841 6.08137C9.71019 10.45 14.512 14.8183 19.3137 19.1869C20.2089 20.0011 21.5826 18.7214 20.6862 17.9055C15.8844 13.5373 11.0826 9.16864 6.28085 4.8004C5.38574 3.98584 4.01197 5.26598 4.90841 6.08137Z" fill="var(--minor)"/><path d="M20.6862 19.1869C25.488 14.8186 30.2898 10.45 35.0916 6.08173C35.9876 5.26634 34.6147 3.98579 33.7191 4.80035C28.9174 9.16859 24.1156 13.5372 19.3138 17.9055C18.4178 18.7209 19.7907 20.0014 20.6862 19.1869Z" fill="var(--minor)"/><path d="M35.0387 22.2772C31.8436 19.4481 28.648 16.6193 25.4529 13.7901C24.5467 12.988 23.172 14.2669 24.0805 15.0715C27.2756 17.9007 30.4711 20.7294 33.6662 23.5586C34.5725 24.3607 35.9471 23.0814 35.0387 22.2772Z" fill="var(--minor)"/><path d="M6.42054 23.5587C9.61565 20.7296 12.8112 17.9008 16.0063 15.0716C16.9143 14.2675 15.5405 12.9877 14.6339 13.7903C11.4388 16.6194 8.24321 19.4482 5.0481 22.2773C4.1401 23.0815 5.51388 24.3617 6.42054 23.5587Z" fill="var(--minor)"/></svg></button></a>
   </section>
+
+<!-- End of body and js script file connetion -->
 </body>
   <script src="script.js"></script>
 </html>

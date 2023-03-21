@@ -22,6 +22,7 @@ function eyesFollow(e) {
     container.style.setProperty("--eyeAngle", angle.toFixed(2) + "deg");
     container.style.setProperty("--xAngle", containerXAngle.toFixed(2) + "deg");
     container.style.setProperty("--yAngle", containerYAngle.toFixed(2) + "deg");});}
+
 // Cutome Cursor---------------------------------------------------------------
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
@@ -30,6 +31,7 @@ document.addEventListener('mousemove', function(e){
   var x = e.clientX;
   var y = e.clientY;
   cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`});
+
 // Dark and Light theme btn----------------------------------------------------
 const root = document.querySelector(':root');
 const lightBtn = document.getElementById('light-theme-btn');
@@ -64,6 +66,7 @@ a.forEach(item => {
     cursor.classList.add('hover');});
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');});})
+
 // Progress Bar----------------------------------------------------------------
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
@@ -72,6 +75,7 @@ function progressBarScroll() {
   document.getElementById("progressBar").style.width = scrolled + "%";};
 window.onscroll = function () {
   progressBarScroll();};
+
 // Collapsible Project Tiles---------------------------------------------------
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -83,6 +87,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "none";
     } else {
       content.style.display = "flex";}});};
+      
 // Go To Top Button------------------------------------------------------------
 function scrollToTop() {
   window.scrollTo(0,0);};
