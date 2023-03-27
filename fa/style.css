@@ -660,6 +660,7 @@ header {
   overflow: hidden;
   border: dashed 1px var(--minor);
   border-top: none;
+  background-color: #ffffff50;
 }
 .content {
   z-index: 1;
@@ -672,7 +673,7 @@ header {
   text-align: right;
   font-size: 14px;
 }
-#portfolio-source-code-btn {
+.source-code-btn {
   margin-top: 10px;
   padding: 4px 8px;
   border-radius: 10px;
@@ -680,11 +681,11 @@ header {
   background-color: var(--major);
   color: var(--minor);
 }
-#portfolio-source-code-btn:hover {
+.source-code-btn:hover {
   cursor: pointer;
   background-color: var(--hover);
 }
-#portfolio-source-code-btn:active {
+.source-code-btn:active {
   background-color: var(--active);
 }
 
