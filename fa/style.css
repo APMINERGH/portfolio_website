@@ -660,7 +660,7 @@ header {
   overflow: hidden;
   border: dashed 1px var(--minor);
   border-top: none;
-  background-color: #ffffff50;
+  background-color: #ffffff20;
 }
 .content {
   z-index: 1;
