@@ -660,7 +660,6 @@ header {
   overflow: hidden;
   border: dashed 1px var(--minor);
   border-top: none;
-  background-color: #ffffff20;
 }
 .content {
   z-index: 1;
@@ -811,10 +810,13 @@ header {
 }
 
 /* Settings for Smaller screens----------------------------------------------*/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px){
   .cursor, .cursor2, .cursorinnerhover {
     display: none;
   }
+}
+
+@media only screen and (max-width: 750px) {
   #tile2 {
     flex-direction: column;
   }
