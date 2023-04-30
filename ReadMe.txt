@@ -2,8 +2,7 @@
 1. Fa (farsi) version of the website needs the local fonts to be loaded 
 alongside the DOM files.
 
-2. Two different versions should exist at the same directory *default* in order
-for the switch language button to work properly when switching between them.
+2. Switch Language button only works with default routing of the files
+if changed make sure to set the proper routing. 
 
-3. This is an ever evolving project of mine so I appreciate correction and 
-suggestions on the code :D 
+3. Feel Free to use and modify the code as you wish :D
