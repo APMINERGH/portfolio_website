@@ -32,6 +32,7 @@
 :root {
   --major: #000;
   --minor: #f8f8f8;
+  --accent: #181818;
   --hover: #505050;
   --active: #303030;
 }
@@ -620,7 +621,7 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
-#projects-tile h2 {
+#projects-tile > h2 {
   transform: translateY(-20px);
   padding: 2px 0;
   width: 315px;
@@ -630,63 +631,26 @@ header {
   font-size: 22px; 
   background-color: var(--major);
 }
-#projects-box {
+
+#project-box-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.collapsible {
-  z-index: 1;
-  width: 100%;
-  height: 30px;
-  background-color: var(--major);
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-.active, .collapsible:hover {
-  cursor: crosshair;
-  background-color: var(--minor);
-  color: var(--major);
-}
-.content-box {
-  padding: 8px;
-  width: 100%;
-  display: none;
-  overflow: hidden;
-  border: dashed 1px var(--minor);
-  border-top: none;
-}
-.content {
-  z-index: 1;
-  margin: 20px ;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse ;
   justify-content: center;
   align-items: center;
-  text-align: right;
-  font-size: 14px;
 }
-.source-code-btn {
-  margin-top: 10px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  border: dashed 1px var(--minor);
-  background-color: var(--major);
+
+.project-box {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
   color: var(--minor);
 }
-.source-code-btn:hover {
-  cursor: pointer;
-  background-color: var(--hover);
-}
-.source-code-btn:active {
-  background-color: var(--active);
-}
+
 
 /* Contact Section-----------------------------------------------------------*/
 #contact-tile {

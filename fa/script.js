@@ -58,8 +58,9 @@ darkBtn = document.getElementById('dark-theme-btn');
 function lightTheme() {
   lightBtn.style.setProperty('z-index', '1');
   darkBtn.style.setProperty('z-index', '2');
-  root.style.setProperty('--major', '#acc1c2');
+  root.style.setProperty('--major', '#c1d3d4');
   root.style.setProperty('--minor', '#000');
+  root.style.setProperty('--accent', '#acc1c2');
   root.style.setProperty('--hover', '#909090');
   root.style.setProperty('--active', '#858585');};
 
@@ -68,6 +69,7 @@ function lightTheme() {
   lightBtn.style.setProperty('z-index', '2');
   root.style.setProperty('--major', '#000');
   root.style.setProperty('--minor', '#f8f8f8');
+  root.style.setProperty('--accent', '#181818');
   root.style.setProperty('--hover', '#505050');
   root.style.setProperty('--active', '#303030');};
 
@@ -80,18 +82,6 @@ function progressBarScroll() {
   document.getElementById("progressBar").style.width = scrolled + "%";};
   window.onscroll = function () {
   progressBarScroll();};
-
-// Collapsible Project Tiles---------------------------------------------------
-var coll = document.getElementsByClassName("collapsible"), i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "flex") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "flex";}});};
       
 // Go To Top Button------------------------------------------------------------
 function scrollToTop() {
