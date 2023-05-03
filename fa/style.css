@@ -669,6 +669,32 @@ header {
   font-weight: bold;
 }
 
+.project-used-tech {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.used-tech {
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#html-txt {
+  color: #e65100;
+}
+
+#css-txt {
+  color: #2965f1;
+}
+
+#javascript-txt {
+  color: #a99813;
+}
+
 .project-description {
   padding: 10px;
   width: 100%;
@@ -679,6 +705,10 @@ header {
   font-size: 18px;
 }
 
+.project-img-container {
+  width: 750px;
+}
+
 .project-github-btn {
   cursor: pointer;
   margin: 10px 0;
@@ -687,6 +717,9 @@ header {
   border-radius: 20px;
   background-color: var(--major);
   font-weight: bold;
+}
+.project-github-btn:hover {
+  background-color: var(--accent);
 }
 
 /* Contact Section-----------------------------------------------------------*/
@@ -860,10 +893,10 @@ header {
   #projects-tile {
     width: 100%;
   }
-  #logs-tile {
-    margin-top: 40px;
+  .project-img-container {
     width: 100%;
   }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -910,9 +943,6 @@ header {
     margin: 5px;
   }
   #projects-tile h2 {
-    width: 290px;
-  }
-  #logs-tile h2 {
     width: 290px;
   }
   #contact-tile h2{
@@ -968,9 +998,6 @@ header {
     margin: 5px 2px;
   }
   #projects-tile h2 {
-    width: 260px;
-  }
-  #logs-tile h2 {
     width: 260px;
   }
   #contact-tile h2{
