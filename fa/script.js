@@ -58,7 +58,7 @@ darkBtn = document.getElementById('dark-theme-btn');
 function lightTheme() {
   lightBtn.style.setProperty('z-index', '1');
   darkBtn.style.setProperty('z-index', '2');
-  root.style.setProperty('--major', '#c1d3d4');
+  root.style.setProperty('--major', '#c1d3d4  ');
   root.style.setProperty('--minor', '#000');
   root.style.setProperty('--accent', '#acc1c2');
   root.style.setProperty('--hover', '#909090');
