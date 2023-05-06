@@ -643,14 +643,12 @@ header {
 }
 
 .project-box {
-  margin: 25px 0;
+  margin: 100px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--accent);
-  color: var(--minor);
 }
 
 .project-content {
@@ -707,6 +705,10 @@ header {
 
 .project-img-container {
   width: 750px;
+}
+.project-img-container * {
+  border-radius: 5px;
+  border: solid 1px #f8f8f880;
 }
 
 .project-github-btn {
